@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- primary meta tags -->
+    <title>Plant – Plant Powered Body Care</title>
+    <meta
+      name="title"
+      content="Plant – Clean Skincare for Everyday Confidence"
+    />
+    <meta
+      name="description"
+      content="Discover Plant, a modern skincare brand focused on clean ingredients and effective formulas. Simple, gentle, and designed for healthy, balanced skin."
+    />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/logo.png" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- ────────────────────────────────────────────────── [ Site Header ]-->
+    <header class="header">
+      <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <h3 class="company-logo">Plant</h3>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li>
+
+            <li>
+              <a href="#shop" class="navbar-link has-after">Shop</a>
+            </li>
+
+            <li>
+              <a href="#offer" class="navbar-link has-after">Offer</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="user">
+            <ion-icon
+              name="person-outline"
+              aria-hidden="true"
+              aria-hidden="true"
+            ></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon
+              name="star-outline"
+              aria-hidden="true"
+              aria-hidden="true"
+            ></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">$0.00</data>
+
+            <ion-icon
+              name="bag-handle-outline"
+              aria-hidden="true"
+              aria-hidden="true"
+            ></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navbar -->
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <h3 class="company-logo">Plant</h3>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#collection" class="navbar-link" data-nav-link
+              >Collection</a
+            >
+          </li>
+
+          <li>
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li>
+            <a href="#offer" class="navbar-link" data-nav-link>Offer</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <main>
+      <article>
+        <!-- ────────────────────────────────────────────────── [ Hero Section ]-->
+        <section class="section hero" id="home" aria-label="hero" data-section>
+          <div class="container">
+            <ul class="has-scrollbar" id="hero-scroll">
+              <!-- Hero cards injected by JavaScript -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- ────────────────────────────────────────────────── [ Collection Section ]-->
+        <section
+          class="section collection"
+          id="collection"
+          aria-label="collection"
+          data-section
+        >
+          <div class="container">
+            <ul class="collection-list" id="collection-list">
+              <!-- Collection cards rendered by JavaScript -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- ────────────────────────────────────────────────── [ Shop Section ]-->
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Our Bestsellers</h2>
+
+              <a href="#" class="btn-link">
+                <span class="span">Shop All Products</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="has-scrollbar" id="shop-products">
+              <!-- Products rendered by JavaScript -->
+            </ul>
+          </div>
+        </section>
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Under $25</h2>
+
+              <a href="#" class="btn-link">
+                <span class="span">Shop All Products</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="has-scrollbar" id="shop-under-25">
+              <!-- Under $25 Products rendered by JavaScript -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- ────────────────────────────────────────────────── [ Banner Section ]-->
+        <section class="section banner" aria-label="banner" data-section>
+          <div class="container">
+            <ul class="banner-list">
+              <li>
+                <div class="banner-card banner-card-1 has-before hover:shine">
+                  <p class="card-subtitle">New Collection</p>
+
+                  <h2 class="h2 card-title">
+                    Clean Skincare for Healthy Everyday Skin
+                  </h2>
+
+                  <a href="#" class="btn btn-secondary">Explore More</a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url(&quot;./assets/images/banner-1.png&quot;);
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="banner-card banner-card-2 has-before hover:shine">
+                  <h2 class="h2 card-title">25% off Everything</h2>
+
+                  <p class="card-text">
+                    Makeup with extended range in colors for every human.
+                  </p>
+
+                  <a href="#" class="btn btn-secondary">Shop Sale</a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url(&quot;./assets/images/banner-2.jpg&quot;);
+                    "
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ────────────────────────────────────────────────── [ Feature Section ]-->
+        <section class="section feature" aria-label="feature" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">Why Shop with Plant?</h2>
+
+            <ul class="flex-list" id="feature-list">
+              <!-- Features rendered by JavaScript -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- ────────────────────────────────────────────────── [ Offer Section ]-->
+        <section
+          class="section offer"
+          id="offer"
+          aria-label="offer"
+          data-section
+        >
+          <div class="container">
+            <figure class="offer-banner">
+              <img
+                src="./assets/images/offer-banner-1.jpg"
+                width="305"
+                height="408"
+                loading="lazy"
+                alt="offer products"
+                class="w-100"
+              />
+
+              <img
+                src="./assets/images/offer-banner-2.jpg"
+                width="450"
+                height="625"
+                loading="lazy"
+                alt="offer products"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="offer-content">
+              <p class="offer-subtitle">
+                <span class="span">Special Offer</span>
+
+                <span class="badge" aria-label="20% off">-20%</span>
+              </p>
+
+              <h2 class="h2-large section-title">Mountain Pine Bath Oil</h2>
+
+              <p class="section-text">
+                Made using clean, non-toxic ingredients, our products are
+                designed for everyone.
+              </p>
+
+              <div class="countdown">
+                <span class="time" aria-label="days">15</span>
+                <span class="time" aria-label="hours">21</span>
+                <span class="time" aria-label="minutes">46</span>
+                <span class="time" aria-label="seconds">08</span>
+              </div>
+
+              <a href="#" class="btn btn-primary">Get Only $39.00</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ────────────────────────────────────────────────── [ Blog Section ]-->
+        <section class="section blog" id="blog" aria-label="blog" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">More to Discover</h2>
+
+            <ul class="flex-list" id="blog-list">
+              <!-- Blog cards rendered by JavaScript -->
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- ────────────────────────────────────────────────── [ Site Footer ]-->
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top" id="footer-top">
+          <!-- Footer top content rendered by JavaScript -->
+        </div>
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2025 apoorvy711</p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <h3 class="company-logo">Plant</h3>
+
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top -->
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- custom js link  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
